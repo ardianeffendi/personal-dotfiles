@@ -1,0 +1,22 @@
+syntax enable
+set nu
+set noerrorbells
+set relativenumber
+set nobackup
+set tabstop=2 softtabstop=2
+set smarttab
+set expandtab
+set shiftwidth=2
+set autoindent
+set nohlsearch
+set scrolloff=8
+set cmdheight=1
+set hidden
+set colorcolumn=80
+
+call plug#begin(stdpath('data') . '/plugged')
+
+
+call plug#end()
+
+" Set Colorscheme
