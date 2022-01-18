@@ -7,7 +7,7 @@ set.tabstop = 2
 set.softtabstop = 2
 set.autoindent = true
 
-set.hlsearch = false
+vim.o.hlsearch = false
 set.incsearch = true
 set.ignorecase = true
 set.smartcase = true
