@@ -5,14 +5,20 @@ return require('packer').startup(function()
   use 'nvim-lualine/lualine.nvim'
 
   -- Highlight, edit, and navigate code using a fast incremental parsing library
-  use 'nvim-treesitter/nvim-treesitter'
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use {
+    'nvim-telescope/telescope-fzf-native.nvim', 
+    run = 'make'
+  }
 
   -- Built in lsp config and auto completion
   use 'neovim/nvim-lspconfig'
