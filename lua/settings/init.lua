@@ -2,10 +2,12 @@ local set = vim.opt
 
 set.expandtab = true
 set.smarttab = true
-set.shiftwidth = 2
-set.tabstop = 2
-set.softtabstop = 2
+set.shiftwidth = 4
+set.tabstop = 4
+set.softtabstop = 4
 set.autoindent = true
+set.colorcolumn = "78"
+set.smartindent = true
 
 vim.o.hlsearch = false
 set.incsearch = true
@@ -21,3 +23,7 @@ set.relativenumber = true
 
 set.hidden = true
 
+vim.o.background = "dark"
+
+-- makefile specific
+vim.cmd[[autocmd FileType make setlocal noexpandtab]]
